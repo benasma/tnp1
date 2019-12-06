@@ -1,0 +1,22 @@
+<div id="asma">
+<div class="container mt-5" >
+  
+<h2 class="text-center" class="display-4 text-center text-danger p-md-3">Nouvelle Collection</h2>
+
+<div class="row">
+  <div class="card col-3 m-5 w-75" style="width: 18rem;" *ngFor="let p of lesProduits | orderBy: order">
+    <img [src]="p.lib" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Identifiant: {{p.id}}</h5>
+      <p class="card-text">Libelle:   {{p.libelle}} </p>
+      <p class="card-text"> prix:   {{p.prix | dinar}} </p>
+      <a class="btn btn-primary" [routerLink]="['/produits',p.id,p.libelle,p.lib,p.prix]"> Détail</a> 
+     
+  
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+

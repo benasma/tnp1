@@ -1,0 +1,33 @@
+<h2 class="text-center" style="color:slateblue;">Ajouter accessoire </h2><br>
+
+<div class="text-center" style="color:salmon;">donner identifiant </div>
+<input type="number" [(ngModel)]="id"/>
+<br>
+<div class="text-center" style="color:salmon;">donner libelle</div>
+<input type="text" [(ngModel)]="libelle"/><br>
+<div class="text-center" style="color:salmon;"> donner image</div>
+<input type="text" [(ngModel)]="lib"/><br>
+<div class="text-center" style="color:salmon;">donner prix d'accessoire'</div>
+<input type="number" [(ngModel)]="prix"/><br>
+<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" (click)="addpro()">Ajouter</button><br>
+<h2 class="text-center" style="color:slateblue;">supprimer accessoire</h2>
+<div class="text-center" style="color:salmon;">donner le nom d'accessoire'</div>
+<input type="number" [(ngModel)]="sup"/><br>
+
+<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"(click)="supprimer()">supprimer </button><br>
+
+
+<h1 class="text-center" style="color:slateblue;">modifier accessoire </h1>
+<div class="text-center" style="color:salmon;">donner le identifiant d'accessoire a modifier</div>
+<input type="number" [(ngModel)]="id1"/><br>
+<div class="text-center" style="color:salmon;">donner le nom a modifier</div>
+<input type="text" [(ngModel)]="nom1"/><br>
+<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"(click)="modif1(id1,nom1)">modifier le nom</button><br>
+<div class="text-center" style="color:salmon;">donner l'image a modifier</div>
+<input type="text" [(ngModel)]="lib1"/><br>
+<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" (click)="modif2(id1,nom1)">modifier l'image </button><br>
+
+<div class="text-center" style="color:salmon;">donner le prix d'accessoire a modifier</div>
+
+<input type="number" [(ngModel)]="prix1"/><br>
+<button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" (click)="modif3(id1,prix1)">modifier prix </button><br>

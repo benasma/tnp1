@@ -1,0 +1,9 @@
+#asma {
+    background: #222 url('/assets/image/accu.webp') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}

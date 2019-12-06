@@ -1,0 +1,48 @@
+
+<div>donner l'Identitfiant</div>
+<input type="number" [(ngModel)]="idd" />
+
+<div *ngFor="let t of products">
+    <div  class="list-group-item list-group-item-primary" *ngIf="t.id==idd">
+   
+       <img [src]="t.lib"  height="300" class="zoom">
+        <div>
+           <p class="card bg-warning">Identitfiant: {{t.id}} </p>
+           <p class="card bg-warning">Libelle: {{t.libelle}} </p>
+          
+       </div>
+       </div>
+    </div>
+    <div>donner le nom </div>
+<input type="text" [(ngModel)]="libelle" />
+<div *ngFor="let t of products">
+    <div  class="list-group-item list-group-item-primary" *ngIf="t.libelle==libelle">
+   
+       <img [src]="t.lib"  height="300" class="zoom">
+        <div>
+           <p class="card bg-warning">Identitfiant: {{t.id}} </p>
+           <p class="card bg-warning">Libelle: {{t.libelle}} </p>
+          
+       </div>
+       </div>
+    </div>
+
+
+
+
+
+
+
+<div>donner l'Identitfiant et le nom</div>
+<input type="text" [(ngModel)]="idNom" (ngModelChange)="cherch()" />
+
+    <div  class="list-group-item list-group-item-primary" >
+   
+       <img [src]="prod.lib"  height="300" class="zoom">
+        <div>
+           <p>Identitfiant: {{prod.id}} </p>
+           <p>Libelle: {{prod.libelle}} </p>
+           <p>prix: {{prod.prix}} </p>
+       </div>
+       </div>
+
